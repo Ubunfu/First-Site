@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ryan's Site - Pictures</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header id="header" class="site-header group">
+      <h1>Ryan's Site</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="js.html">JavaScripts!</a></li>
+          <li><a href="pics.html">Pictures</a></li>
+          <li><a href="http://blackle.com" target="_blank">Blackle</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="pics-main">
+      <section class="pics-billboard">
+        <!-- Here is a part of my page containing content that is grouped together  -->
+        <h2>Picture Collections</h2>
+        <p>Here are several collections of pictures that I'd like to share.  Feel
+          free to take a look around!
+        </p>
+      </section>
+      <div class="pics-col-wrapper group">
+        <section class="pics-sidebar">
+          <h3>Collections:</h3>
+          <nav class="pics-nav  ">
+            <ul>
+              <!-- <li><button type="button" name="selfies">Selfies</button></li> -->
+              <!-- <li><button type="button" name="selfies">Tank</button></li> -->
+              <!-- <li><button type="button" name="selfies">Interesting / Other</button></li> -->
+              <a href="#"><li>Selfies</li></a>
+              <!-- <a href="#"><li>Tank</li></a> -->
+              <!-- <a href="#"><li>Other</li></a> -->
+            </ul>
+          </nav>
+        </section>
+        <section class="pics-content">
+          <div class="w3-content w3-display-container">
+            <img class="mySlides" src="res/FullSizeRender.jpg">
+            <img class="mySlides" src="res/FullSizeRender 2.jpg">
+            <img class="mySlides" src="res/FullSizeRender 3.jpg">
+            <img class="mySlides" src="res/FullSizeRender 4.jpg">
+          </div>
+          <script type="text/javascript">
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+          </script>
+        </section>
+      </div>
+    </main>
+    <footer id="footer" class="site-footer group">
+      <p class="footer-copyright">
+        &copy; Ryan Allen 2017
+      </p>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pics.html">Pictures</a></li>
+          <li><a href="http://blackle.com" target="_blank">Blackle</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,244 @@
+/* Cleafix Hack */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.emphasis {
+  font-style: italic;
+}
+
+.site-header {
+  background: #3563a0;
+  color: #fff;
+  padding: 10px 5%;
+  box-shadow: 0 1px 5px #333;
+  font-family: sans-serif;
+}
+
+.site-header h1 {
+  margin: 0;
+  float: left;
+}
+
+.site-main, .pics-main {
+  font-family: sans-serif;
+}
+
+.main-nav {
+  float: right;
+  padding: 5px 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav ul li {
+  display: inline;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.billboard {
+  background: #eee;
+  text-align: center;
+  padding: 40px;
+  margin-top: 3px;
+}
+
+.billboard h2 {
+  margin-top: 0;
+}
+
+.col-wrapper {
+  width: 90%;
+  /*to center a div
+  - it must have some kind of width
+  - set left-right margins to "auto"*/
+  margin: 0 auto;
+  /*to center text/buttons:
+  - use text-align: center;*/
+}
+
+.main-col {
+  float: right;
+  width: 60%;
+  padding: 20px 5%
+}
+
+.side-col {
+  float: left;
+  width: 20%;
+  padding: 15px 2.5%;
+  /*background: #ddf7ff;*/
+  box-shadow: 1px 1px 3px #AAA;
+  /*padding: 20px 5%;*/
+}
+
+.site-footer {
+  /*background: #6593d0;*/
+  background: #3563a0;
+  color: #FFF;
+  padding: 10px 5%;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.footer-copyright {
+  float: left;
+}
+
+.footer-nav {
+  float: right;
+}
+
+.footer-nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+.footer-nav ul li {
+  display: inline;
+}
+
+.footer-nav li + li, .main-nav li + li {
+  margin-left: 10px;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #FFF;
+}
+/******************************************/
+/*            Pics Page:                  */
+/******************************************/
+.pics-billboard {
+  background: #eee;
+  text-align: center;
+  padding: 40px;
+  margin-top: 3px;
+}
+
+.pics-billboard h2 {
+  margin-top: 0;
+}
+
+.pics-col-wrapper {
+  width: 90%;
+  margin: 0 auto 20px auto;
+}
+
+.pics-sidebar {
+  float: left;
+  width: 20%;
+  padding: 15px 2.5%;
+  box-shadow: 1px 1px 3px #AAA;
+}
+
+.pics-sidebar span {
+
+}
+
+.pics-nav ul {
+  list-style: none;
+  padding: 0;
+  /*align: left;*/
+}
+
+.pics-nav ul a {
+  text-decoration: none;
+  color: #000;
+}
+
+.pics-nav ul  li {
+  padding: 5px;
+}
+
+.pics-nav ul li:hover {
+  background: #EEE;
+}
+
+.pics-nav ul li:active {
+  background: #DDD;
+}
+
+.pics-nav ul li + li {
+  padding-top: 5px;
+}
+
+.pics-nav button {
+  border-radius: 10px;
+}
+
+.pics-content {
+  float: right;
+  width: 70%;
+  padding: 15px 2.5%;
+}
+
+.pics-content img {
+  max-height: 550px;
+  max-width: 100%;
+}
+
+/******************************************/
+/*            JS Page:                    */
+/******************************************/
+
+.js-main {
+  height: auto;
+  width: 90%;
+  margin: auto;
+}
+
+.js-main h1 {
+  font-family: courier;
+
+}
+
+.js-buttons {
+  width: 60%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.js-button {
+  background: #ebebeb;
+  background-image: -webkit-linear-gradient(top, #ebebeb, #d4d4d4);
+  background-image: -moz-linear-gradient(top, #ebebeb, #d4d4d4);
+  background-image: -ms-linear-gradient(top, #ebebeb, #d4d4d4);
+  background-image: -o-linear-gradient(top, #ebebeb, #d4d4d4);
+  background-image: linear-gradient(to bottom, #ebebeb, #d4d4d4);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #4d4d4d;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #a3a3a3 1px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.js-button:hover {
+  background: #d4d4d4;
+  background-image: -webkit-linear-gradient(top, #d4d4d4, #ebebeb);
+  background-image: -moz-linear-gradient(top, #d4d4d4, #ebebeb);
+  background-image: -ms-linear-gradient(top, #d4d4d4, #ebebeb);
+  background-image: -o-linear-gradient(top, #d4d4d4, #ebebeb);
+  background-image: linear-gradient(to bottom, #d4d4d4, #ebebeb);
+  text-decoration: none;
+}
